@@ -15,5 +15,5 @@ session.run(init)
 print(session.run(w))
 
 for i in range(1000):
-  session.run(train)
-print(session.run(w))
+  session.run(train, feed_dict={x:coefficients})
+print(session.run(w)
